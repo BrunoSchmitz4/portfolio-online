@@ -5,9 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- Algumas fontes interessantes -->
+  <!-- Sans Serif polido -->
+  <link href="https://fonts.cdnfonts.com/css/liberation-sans" rel="stylesheet"> 
+  <!-- Letra "futurística" -->
+  <link href="https://fonts.cdnfonts.com/css/futuremillennium" rel="stylesheet">
+  <!-- Letra menos polida -->
+  <link href="https://fonts.cdnfonts.com/css/pentay" rel="stylesheet">
+
+  <!-- Icons para a aba de conhecimentos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
   <title>Intrudução</title>
 </head>
-<body>
+<body class="body-body">
   <!--Como funciona a nomenclatura das classes:
   ~ Como o site está dividido em 3 partes (cabeçalho, conteúdo principal e rodapé,), o sufixo é o nome de uma das três partes;
   ~ Em seguida, vem a função da tag que terá a classe (divisória, container, caixa, título), junto de um número de hierarquia (quanto menor for o valor do número, mais alto é sua hierarquia);
@@ -24,33 +36,186 @@
         Olá, bem vindo(a/e) ao meu portfólio!
       </div>
       <div class="header-content2-div row">
-          <a class="header-link1-a col-6" [href]="">Projetos</a>
-          <a class="header-link1-a col-6" [href]="">Conhecimentos</a>
-          <a class="header-link1-a col-6" [href]="">Descontração</a>
-          <a class="header-link1-a col-6" [href]="">Contate-me</a>
+          <a class="header-link1-a col-6" [href]="" routerLink="#">Projetos</a>
+          <a class="header-link1-a col-6" [href]="" routerLink="">Conhecimentos</a>
+          <a class="header-link1-a col-6" [href]="" routerLink="/">Descontração</a>
+          <a class="header-link1-a col-6" [href]="" routerLink="/">Contate-me</a>
+          
+          <!-- <a class="header-link1-a col-6" [href]="">Contate-me</a> -->
       </div>
     </div>
   </header>
-  <main class="main-main">
-    <div class="main-container1-div">
-      <div class="main-box1-div">
-        <div class="main-box2-div">
-          <p>Meu nome é <u class="main-underliner1-u">Bruno Schmitz da Silva</u> e meus pronomes são <u class="main-underliner1-u">ele/dele.</u></p>
+  <router-outlet>
+    <main class="main-main">
+
+      <!-- Conteúdo: Primeira divisória principal-->
+      <div class="main-container1-div">
+
+        <!-- Conteúdo: Introduzindo-me-->
+        <div class="main-box1-div">
+          <div class="main-box2-div">
+            <p>Meu nome é <u class="main-underliner1-u">Bruno Schmitz da Silva</u> 
+              e meus pronomes são <u class="main-underliner1-u">ele/dele.</u>
+            </p>
+          </div>
+          <div class="main-box2-div">
+            <p>Tenho <u class="main-underliner1-u">18 anos</u> e sou de <u class="main-underliner1-u">Santa Catarina.</u></p>
+          </div>
         </div>
-        <div class="main-box2-div">
-          <p>Tenho <u class="main-underliner1-u">18 anos</u> e sou de <u class="main-underliner1-u">Santa Catarina.</u></p>
+        <div class="main-box1-div">
+          <div class="main-box2-div">
+            <p>Eu sou um <u class="main-underliner1-u">programador web</u> com conhecimentos <u class="main-underliner1-u">Front-End e Back-end.</u></p>
+          </div>
+          <div class="main-box2-div">
+            <p>Também já tive contato com:<u class="main-underliner1-u">Banco de dados</u> e <u class="main-underliner1-u">Desenvolvimento de jogos.</u></p>
+          </div>
+        </div>
+
+        <!-- Conteúdo: Alguns projetos-->
+        <div class="main-box4-div">
+          <div class="main-box3-div">
+            <div class="carrossel">
+              <ul class="main-list1-ul">
+                <li class="main-li1-li">
+                  <h5 class="main-title1-h5">Nahida</h5>
+                  <img class="main-img3-img" src="https://genshin.honeyhunterworld.com/img/nahida_073.webp" alt="Projeto 1">
+                  
+                </li>
+                <li class="main-li1-li">
+                  <h5>Venti</h5>
+                  <img src="https://genshin.honeyhunterworld.com/img/venti_022.webp" alt="Projeto 2">
+                </li>
+                <li class="main-li1-li">
+                  <h5>Raiden Shogun</h5>
+                  <img src="https://genshin.honeyhunterworld.com/img/h_368138.webp" alt="Projeto 3">
+                </li>
+                <li class="main-li1-li">
+                  <h5>Zhongli</h5>
+                  <img src="https://genshin.honeyhunterworld.com/img/h_368118.webp" alt="Projeto 4">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conteúdo: Tecnologias que uso-->
+        <div class="main-box5-div">
+          <h3 class="main-title1-h3">O que eu uso ou tive contato:</h3>
+          <div class="main-box6-div"> <!-- Container pai Front-End -->
+            <h5 class="main-title2-h5">Front-end</h5> <!-- Container filho do container-->
+            <div class="main-box7-div"> <!-- Container filho do container-->
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">HTML5</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+              </div>
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">CSS3</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+              </div>
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">JavaScript</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+              </div>
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">TypeScript</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
+              </div>
+            </div>
+          </div>
+          <div class="main-box6-div"> <!-- Container pai Front-End -->
+            <h5 class="main-title2-h5">Frameworks</h5> <!-- Container filho do container-->
+            <div class="main-box7-div"> <!-- Container filho do container-->
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">Angular JS</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg">
+              </div>
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">BootStrap</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
+              </div>
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">Node JS</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+              </div>
+            </div>
+          </div>
+          <div class="main-box6-div"> <!-- Container pai Front-End -->
+            <h5 class="main-title2-h5">Back-End</h5> <!-- Container filho do container-->
+            <div class="main-box7-div"> <!-- Container filho do container-->
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">Python</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+              </div>
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">PHP</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+              </div>
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">C#</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg">
+              </div>
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">MySQL</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+              </div>
+            </div>
+          </div>
+          <div class="main-box6-div"> <!-- Container pai Front-End -->
+            <h5 class="main-title2-h5">IDEs</h5> <!-- Container filho do container-->
+            <div class="main-box7-div"> <!-- Container filho do container-->
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">VS Code</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
+              </div>
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">VS Community</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg">
+              </div>
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">PyCharm</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg">
+              </div>
+            </div>
+          </div>
+          <div class="main-box6-div"> <!-- Container pai Front-End -->
+            <h5 class="main-title2-h5">Outros</h5> <!-- Container filho do container-->
+            <div class="main-box7-div"> <!-- Container filho do container-->
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">Unity</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg">
+              </div>
+              
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">GitHub</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+              </div>
+              <div class="main-box8-div"> <!-- Box do container filho-->
+                <h5 class="main-title3-h5">Git</h5> <!-- Box do container filho-->
+                <img class="main-img1-img" alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="main-box1-div">
-        <div class="main-box2-div">
-          <p>Eu sou um <u class="main-underliner1-u">programador web</u> com conhecimentos <u class="main-underliner1-u">Front-End e Back-end.</u></p>
+
+      <!-- Conteúdo: Segunda divisória principal-->
+      <div class="main-container2-div">
+        <h2 class="main-title1-h2">Descontraindo...</h2>
+        <p>Jogos e animes, um mar de ideias e terapia! :)</p>
+        <h4 class="main-title1-h4">Alguns exemplos dos meus preferidos:</h4>
+        <div class="main-box9-div">
+          <h2 class="main-title2-h2">Jogos</h2>
+          <p class="main-para1-p">O Brasil é o 12° país que mais movimentou o mercado de jogos. Só em 2022 foram mais de R$ 12 bilhões de reais! Genshin Impact é o meu jogo preferido:</p>
+          <img class="main-img2-img" src="https://universonintendo.com/wp-content/uploads/2022/05/Genshin-Impact-Scrn05052022.jpg" alt="">
         </div>
-        <div class="main-box2-div">
-          <p>Também já tive contato com:<u class="main-underliner1-u">Banco de dados</u> e <u class="main-underliner1-u">Desenvolvimento de jogos.</u></p>
+        <div class="main-box9-div">
+          <h2 class="main-title2-h2">Animes</h2>
+          <p class="main-para1-p">Cavaleiros do Zodíaco foi o primeiro dos vários animes a virem ao Brasil. Muitos jogos desenvolvidos se inspiram neles! Kimetsu no Yaiba, é o meu anime preferido:</p>
+          <img class="main-img2-img" src="https://i0.wp.com/sakugabrasil.com/administracao/wp-content/uploads/2021/09/E-kxaRhXoAA4Hh3.jpg?fit=1280%2C720&ssl=1" alt="">
         </div>
       </div>
-    </div>
-  </main>
+    </main>
+  </router-outlet>
   <footer class="footer-footer">
     <div class="footer-container1-div">
       <div class="footer-linker1-div" *ngFor="let midia of social_medias">
@@ -59,32 +224,6 @@
           <h4 class="footer-subtitle1-h4">{{midia.title}}</h4>
         </a>
       </div>
-      <!-- <ul class="footer-linker1-div">
-        <li class="footer-linker2-div" *ngFor="let midia of social_medias">
-          <a class="footer-link1-a" [href]="midia.link">
-            <img class="footer-img1-div" alt="" [src]="midia.img">
-            <h4 class="footer-subtitle1-h4">{{midia.title}}</h4>
-          </a>
-        </li>
-      </ul> -->
-          <!-- <div class="footer-linker1-div">
-              <a href="https://www.linkedin.com/in/bruno-schmitz-da-silva-06183b213/">
-                <img class="footer-img1-div" alt="" src="https://cdn-icons-png.flaticon.com/128/1384/1384072.png">
-                <h4 class="footer-subtitle1-h4">LinkedIn</h4>
-              </a>
-          </div>
-          <div class="footer-linker1-div">
-            <a href="https://github.com/BrunoSchmitz4">
-              <img class="footer-img1-div" alt="" src="https://cdn-icons-png.flaticon.com/128/2504/2504911.png">
-              <h4 class="footer-subtitle1-h4">GitHub</h4>
-            </a>
-          </div>
-          <div class="footer-linker1-div">
-            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKHQdcKGpqMsNXmkHGrgJMdRqTvzwRPkMmTGdPQNPgDkHzrxBmsrQNscCsSdQmrvkBBgBbq">
-              <img class="footer-img1-div" alt="" src="https://cdn-icons-png.flaticon.com/128/8109/8109508.png">
-              <h4 class="footer-subtitle1-h4">Gmail</h4>
-            </a>
-          </div> -->
     </div>
   </footer>
 </body>

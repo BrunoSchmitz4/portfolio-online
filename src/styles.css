@@ -6,4 +6,8 @@
 
 body{
   background: linear-gradient(to bottom, black, #013f2df0, black);
+  background-size: 100%;
 }
+
+/* Estilos importados do Bootstrap*/
+

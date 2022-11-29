@@ -1,4 +1,5 @@
 *{
+    font-family: 'Liberation Sans', sans-serif;          
 }
 
 hr{
@@ -25,6 +26,7 @@ hr{
 .header-content1-div{
     color: white;
     font-size: 24px;
+    font-family: 'FutureMillennium', sans-serif;
     margin: 5px 0 5px 0;
     text-decoration: #21D19F underline;
 }
@@ -111,11 +113,166 @@ hr{
     justify-content: flex-start;
 }
 
+.main-box4-div{
+    border-color: white;
+    border-style: solid;
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+}
+.carrossel{
+    max-width: 425px;
+    width: 450px;
+    height: 250px;
+    margin: 0 5%px auto;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    margin: 0 auto auto auto;
+}
+
+.carrossel ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    max-width: 425px;
+    width: 425px;
+    height: 250px;
+}
+
+.carrossel li{
+    position: relative;
+    animation: slide 15s infinite ease-out;
+}
+
+.main-img3-img{
+    width: 250px;
+    min-width: 250px;
+    height: 350;
+    min-height: 250px;
+}
+@keyframes slide{
+    0%{right: 0px;}
+    10%{right: 0px;}
+    20%{right:  250px;}
+    25%{right: 250px;}
+    40%{right: 500px;}
+    45%{right: 500px;}
+    60%{right: 750px;}
+    65%{right: 750px;}
+    100%{right: 0px;}
+}
 .main-underliner1-u{
     color: #b4ffea;
 }
-/* Rodapé */
 
+/* Conteúdo: Conhecimentos */
+.main-box5-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.473);
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    margin-top: 5px;
+    margin: auto;
+    width: 400px;
+    min-width: 400px;
+    max-width: 2400px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.main-title1-h3{
+    font-size: 26px;
+    color: #21D19F;
+}
+.main-box6-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+    border: solid;
+    border-radius: 4px;
+    border-width: 4px;
+    border-color: #b4ffea;
+    border-bottom: none;
+    border-right: none;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding: 1px;
+    min-width: 360px;
+    width: 360px;
+}
+.main-title2-h5{
+    font-size: 24px;
+    text-decoration: underline white;
+}
+.main-box7-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.main-box8-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0 3px 0 3px;
+}
+.main-title3-h5{
+    text-decoration: underline #21D19F;
+}
+.main-img1-img{
+    width: 75px;
+    height: 75px;}
+
+/* Segunda Divisória principal */
+.main-container2-div{
+
+}
+
+.main-title1-h2{
+
+}
+
+.main-title1-h4{
+
+}
+
+.main-box9-div{
+
+}
+
+.main-title2-h2{
+
+}
+
+.main-para1-p{
+
+}
+
+.main-img2-img{
+    min-width: auto;
+    min-height: auto;
+    width: 400px;
+    height: 200px;
+    max-width: 1200px;
+    max-height: 600px;
+}
+
+/* Rodapé */
 .footer-footer{
 }
 
@@ -154,6 +311,8 @@ hr{
 .footer-subtitle1-h4:hover{
     text-decoration: none;
 }
+
+
 /* 0 ~ 575px
 @media (max-width: 575px){
 

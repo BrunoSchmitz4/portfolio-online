@@ -4,11 +4,15 @@ import { AppRoutingModule } from './app-routing.module';//Importação do export
 
 import { AppComponent } from './app.component';
 import { IntroducaoComponent } from './componentes/introducao/introducao.component';
+import { ProjectsComponent } from './componentes/projects/projects.component';
+import { ConhecimentosComponent } from './componentes/conhecimentos/conhecimentos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IntroducaoComponent
+    IntroducaoComponent,
+    ProjectsComponent,
+    ConhecimentosComponent
   ],
   imports: [
     BrowserModule,
